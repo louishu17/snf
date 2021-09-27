@@ -3,7 +3,7 @@ import numpy as np
 
 class MatrixOperations():
     def _add_row(self, mat, i, j):
-        mat[i, :] = (mat[i, :] + mat[j, :]) % 2
+        mat[i] = (mat[i] + mat[j]) % 2
         return mat
 
     def _flip_rows(self, mat, i, j):
